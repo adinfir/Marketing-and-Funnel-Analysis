@@ -7,6 +7,7 @@ WITH base AS (
     COUNTIF(event_type = 'purchase') as total_cust_purchase
   FROM bigquery-public-data.thelook_ecommerce.events
   WHERE user_id IS NOT NULL
+  AND FORMAT_DATE('%Y', created_at) IN ('2024', '2025')
   GROUP BY
     browser,
     traffic_source
