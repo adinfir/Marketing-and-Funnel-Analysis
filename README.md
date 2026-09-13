@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project analyzes **marketing channel performance and customer purchase funnel behavior** across traffic sources and browsers to evaluate acquisition performance and identify conversion patterns.
+This project analyzes **marketing channel performance and customer purchase funnel behavior over a 24-month period (January 2024 – December 2025)** across traffic sources and browsers to evaluate acquisition performance and identify conversion patterns.
 
 The analysis focuses on identifying **traffic source distribution, purchase conversion by traffic source and browser, high-performing channel combinations, and customer movement through the Product View → Add to Cart → Purchase funnel** to support marketing channel evaluation and customer acquisition strategies.
 
@@ -135,278 +135,256 @@ Measures the relative contribution of each marketing source to overall customer 
 
 ## 📈 Insight
 
-### 🌐 Overall Traffic & Purchase Performance
+### 📣 Traffic Source Distribution
 
-A total of **1,301,736 customer sessions** were recorded across **5 traffic sources**, generating **181,322 purchases** at an overall conversion rate of approximately **13.93%**.
+A total of **57,935 customers** were identified across **5 traffic sources** during the 2024–2025 analysis period.
 
-This provides a broad view of acquisition volume and purchase activity across the marketing channel mix.
+The analysis shows an extremely high purchase conversion rate across all traffic sources, with **57,844 customers making a purchase**, resulting in an overall conversion rate of approximately **99.84%**.
+
+The near-uniform conversion rates suggest that traffic source has limited differentiation in purchase behavior within the analyzed dataset.
 
 ---
 
-### 📊 Highly Consistent Conversion Across Traffic Sources
+### 📊 Consistent Conversion Across Traffic Sources
 
-Conversion rates were remarkably consistent across all major traffic sources, ranging from approximately:
+Conversion rates were remarkably consistent across all channels, ranging from **99.74% on YouTube** to **99.88% on Email**.
 
-* **Organic — 13.90%**
-* **Facebook — 13.91%**
-* **Adwords — ~13.9%**
-* **Email — ~13.9%**
-* **YouTube — 13.99%**
+The narrow variation indicates that no single traffic source demonstrates a meaningful conversion advantage at the customer level.
 
-The narrow conversion range suggests that **traffic source does not significantly differentiate purchase intent at this level of analysis**.
-
-Therefore, channel evaluation should consider not only conversion rate but also **traffic volume, acquisition cost, customer quality, and long-term customer value**.
+This suggests that channel evaluation should focus not only on conversion rate, but also on **traffic volume, acquisition cost, customer value, and retention**.
 
 ---
 
 ### 📧 Email as the Dominant Traffic Source
 
-**Email** was the largest traffic source with approximately **588,341 sessions**, representing around **45.2% of total traffic**.
+**Email** was the largest traffic source, generating **23,761 customers (41.0% of the total)**, followed by **Adwords with 17,421 customers**.
 
-**Adwords** followed with approximately **389,939 sessions**.
+Together, these two channels accounted for approximately **71.1% of the customer traffic**.
 
-Together, Email and Adwords generated **more than 75% of total traffic**.
-
-This indicates that these two channels are particularly important contributors to overall customer acquisition volume.
+Their large contribution makes Email and Adwords important channels for monitoring **customer acquisition volume and overall marketing efficiency**, even though their conversion rates are similar to other channels.
 
 ---
 
-### ▶️ YouTube & Facebook
+### ▶️ YouTube and Facebook Show Similar Volume
 
-**YouTube** and **Facebook** contributed relatively similar traffic volumes, with approximately **129K sessions each**.
+**YouTube and Facebook** generated comparable customer volumes, with approximately **6,600–6,685 customers** each.
 
-However, YouTube achieved a slightly higher conversion rate of **13.99%**, compared with approximately **13.91% for Facebook**.
+Their conversion rates were also highly similar:
 
-Although the difference is small, YouTube demonstrates slightly stronger purchase efficiency within the analyzed dataset.
+* **YouTube — 99.74%**
+* **Facebook — 99.79%**
+
+The minimal difference suggests that neither channel has a clear conversion advantage based on the current analysis.
 
 ---
 
-### 🔎 Organic Traffic
+### 🔎 Organic Traffic Maintains High Conversion
 
-**Organic** was the smallest traffic source with approximately **65,085 sessions**.
+**Organic** was the smallest traffic source, generating **3,451 customers**.
 
-Despite its lower volume, Organic traffic maintained a conversion rate close to the other channels.
+Despite its lower volume, Organic maintained a **99.77% conversion rate**, comparable with all other channels.
 
-This suggests that Organic visitors may still represent a **consistent source of purchase intent**, despite contributing a smaller share of overall traffic.
+This suggests that Organic traffic is not significantly weaker in terms of purchase behavior and may represent an opportunity to grow acquisition volume through **SEO and organic content strategies**.
 
 ---
 
 ### 🌐 Browser Performance
 
-**Chrome** dominated browser activity with approximately **172,354 product views and 90,756 purchases** in the analyzed browser × traffic-source data.
+**Chrome** dominated customer activity, generating **32,254 product views** and **32,196 purchases**, resulting in a **99.82% conversion rate**.
 
-Its high activity volume was driven primarily by **Email and Adwords traffic**.
-
-This indicates that Chrome represents the largest browser environment in the dataset and should be considered when monitoring website experience and conversion performance.
+The high volume was primarily driven by **Email and Adwords traffic**, making Chrome an important browser segment for monitoring customer experience and conversion performance.
 
 ---
 
-### 🏆 Highest-Converting Browser × Traffic Source Combinations
+### 🏆 Highest-Converting Browser × Traffic Source Segments
 
-Several browser and traffic-source combinations showed notably higher conversion rates:
+The highest conversion rates were observed in several browser × traffic source combinations:
 
-| Rank | Browser × Traffic Source | Conversion Rate |
-| ---: | ------------------------ | --------------: |
-|    1 | Safari + Facebook        |          53.56% |
-|    2 | IE + YouTube             |          53.42% |
-|    3 | IE + Facebook            |          53.40% |
+* **IE + Adwords — 99.91%**
+* **Firefox + Email — 99.89%**
+* **Safari + YouTube — 99.86%**
 
-These segments show substantially higher conversion rates than the overall traffic-source average.
+While these segments show slightly higher conversion rates, the differences are very small.
 
-However, because these are **niche browser × source combinations**, their relatively high rates may be influenced by smaller sample sizes.
-
-Further volume validation should therefore be performed before making significant marketing decisions.
+Therefore, they should be evaluated alongside **customer volume** before being prioritized for marketing optimization.
 
 ---
 
-### 🛒 Purchase Funnel Behavior
+### 🛒 Product View → Add to Cart Funnel
 
-The funnel analysis evaluates customer sessions across:
+The funnel analysis shows **zero drop-off between Product View and Add to Cart**.
 
-```text
-Product View
-      ↓
-Add to Cart
-      ↓
-Purchase
-```
+All **72,667 sessions with a Product View also progressed to Add to Cart**.
 
-The analyzed data shows that **all 181,322 sessions reaching Product View also reached Add to Cart and Purchase**, resulting in effectively **zero funnel drop-off**.
-
-This means the dataset does not provide a realistic representation of gradual customer conversion behavior.
-
-Therefore, **traditional funnel drop-off analysis is not applicable to this synthetic event structure**.
-
-For real-world conversion analysis, the same methodology should be applied to production event data where customers can enter and exit the funnel at different stages.
+This indicates an unusually strong transition between product browsing and cart activity and suggests that the main funnel friction does not occur at the product-to-cart stage.
 
 ---
 
-### ⚠️ Synthetic Funnel Data Limitation
+### 💳 Final Purchase Conversion
 
-The absence of funnel drop-off is an important data-quality limitation.
+The only measurable funnel drop-off occurs between **Add to Cart and Purchase**.
 
-A realistic ecommerce funnel would typically show:
+Of the **72,667 sessions reaching Add to Cart, 72,512 proceeded to Purchase**, leaving **155 sessions (0.21%)** without a completed purchase.
 
-```text
-Product View
-      ↓
-   Drop-off
-      ↓
-Add to Cart
-      ↓
-   Drop-off
-      ↓
-Purchase
-```
+This indicates that the checkout stage represents the primary point of friction in the analyzed funnel, although the overall drop-off remains extremely small.
 
-Because the current dataset records identical session counts across the funnel stages, metrics such as:
-
-* Product View → Add to Cart conversion
-* Add to Cart → Purchase conversion
-* Overall funnel conversion
-* Funnel abandonment rate
-
-cannot be reliably interpreted from this analysis.
-
-This limitation should be clearly communicated when presenting the analysis.
+Further analysis could investigate **payment issues, checkout usability, product availability, or cart abandonment behavior**.
 
 ---
 
 ## 🧮 SQL Techniques Demonstrated
 
-This project demonstrates practical SQL techniques commonly used in Data Analyst workflows.
+### 1. CTE (Common Table Expression)
 
-### CTE
+Used multiple CTEs to structure traffic-source analysis, customer-level funnel analysis, and session-level funnel progression into logical stages.
 
-CTEs were used to separate the preparation and aggregation stages of the funnel analysis.
-
-```sql
-WITH base AS (
-    SELECT
-        id,
-        user_id,
-        sequence_number,
-        event_type,
-        session_id,
-        CASE
-            WHEN sequence_number = 1 THEN 1
-            ELSE 0
-        END AS journey_start,
-        CASE
-            WHEN event_type = 'product' THEN 1
-            ELSE 0
-        END AS product_flag,
-        CASE
-            WHEN event_type = 'cart' THEN 1
-            ELSE 0
-        END AS cart_flag,
-        CASE
-            WHEN event_type = 'purchase' THEN 1
-            ELSE 0
-        END AS purchase_flag
-    FROM `bigquery-public-data.thelook_ecommerce.events`
-    WHERE event_type != 'cancel'
-)
+```sql id="f6k2p9"
+WITH base AS (...),
+traffic_summary AS (...)
 ```
 
-This approach makes the funnel logic easier to organize and maintain.
+The funnel analysis also uses multiple CTEs to progressively transform event-level data into session-level funnel stages.
 
-### CASE WHEN
+---
 
-`CASE WHEN` was used to create binary flags for each funnel stage.
+### 2. Date Filtering with `FORMAT_DATE()`
 
-```sql
+Restricted the analysis to events occurring during **2024–2025**.
+
+```sql id="m8r3t5"
+WHERE FORMAT_DATE('%Y', created_at) IN ('2024', '2025')
+```
+
+This ensures that the traffic-source, browser, and funnel analyses use the same analysis period.
+
+---
+
+### 3. Conditional Aggregation with `COUNT(DISTINCT CASE WHEN)`
+
+Used conditional distinct counting to identify customers who completed purchases within each traffic source.
+
+```sql id="v4n7c2"
+COUNT(DISTINCT CASE
+  WHEN event_type = 'purchase'
+  THEN user_id
+END) AS total_customer_purchase
+```
+
+This prevents the same customer from being counted multiple times within a traffic source.
+
+---
+
+### 4. `CASE WHEN` for Funnel Flags
+
+Created binary indicators to identify whether a session contained each funnel stage.
+
+```sql id="x9p5k1"
 CASE
-    WHEN event_type = 'product' THEN 1
-    ELSE 0
+  WHEN event_type = 'product' THEN 1
+  ELSE 0
 END AS product_flag
 ```
 
-Similar flags were created for Add to Cart and Purchase events.
+The same approach was applied to Cart and Purchase events.
 
-These flags allow event-level data to be transformed into session-level funnel indicators.
+---
 
-### COUNTIF
+### 5. `MIN()` for Event Sequence Identification
 
-`COUNTIF()` was used to count customers or events satisfying a specific condition.
+Used `MIN()` to identify the earliest sequence number for each funnel stage within a session.
 
-For example:
-
-```sql
-COUNTIF(event_type = 'purchase')
+```sql id="q3w8m6"
+MIN(
+  CASE
+    WHEN product_flag = 1
+    THEN sequence_number
+  END
+) AS product_sequence
 ```
 
-This allows purchase activity to be counted directly without requiring a separate filter.
+This allows the analysis to determine the chronological order in which Product View, Add to Cart, and Purchase occurred.
 
-### Conditional Aggregation
+---
 
-Conditional aggregation was used to calculate product views and purchases within the same grouped dataset.
+### 6. Sequence-Based Funnel Validation
 
-```sql
-COUNTIF(event_type = 'product') AS total_cust_view,
-COUNTIF(event_type = 'purchase') AS total_cust_purchase
+Compared `sequence_number` values to ensure that funnel stages occurred in the correct order.
+
+```sql id="j7d2r4"
+cart_sequence > product_sequence
+AND purchase_sequence > cart_sequence
 ```
 
-This makes it possible to calculate conversion rates by browser and traffic source.
+This prevents events from being counted as a valid funnel progression when they occurred in the wrong sequence.
 
-### Session-Level Aggregation
+---
 
-The event-level records were aggregated by:
+### 7. Session-Level Aggregation
 
-```sql
-user_id,
-journey_id
+Grouped event-level records by `session_id` and `user_id` to transform individual events into session-level funnel behavior.
+
+```sql id="b5n9x3"
+GROUP BY
+  session_id,
+  user_id
 ```
 
-and `MAX()` was used to determine whether each session reached a particular funnel stage.
+This enables each session to be classified according to the furthest valid stage reached.
 
-```sql
-MAX(product_flag) AS product_flag,
-MAX(cart_flag) AS cart_flag,
-MAX(purchase_flag) AS purchase_flag
+---
+
+### 8. Conditional Aggregation with `MAX()`
+
+Used `MAX()` to create customer-level indicators showing whether a customer viewed a product or completed a purchase within a browser × traffic-source combination.
+
+```sql id="c8v4h2"
+MAX(CASE
+  WHEN event_type = 'product' THEN 1
+  ELSE 0
+END) AS viewed
 ```
 
-This prevents multiple events within the same session from being counted as separate funnel journeys.
+---
 
-### UNION ALL
+### 9. `COUNTIF()` for Funnel Stage Counting
 
-`UNION ALL` was used to transform funnel stages into a single vertical result.
+Used `COUNTIF()` to count sessions reaching each funnel stage.
 
-```sql
-SELECT
-    'Product View' AS stage,
-    COUNTIF(product_flag = 1) AS session_count
-FROM aggregation
+```sql id="n2m6k8"
+COUNTIF(product_flag = 1) AS session_count
+```
 
+The same approach was applied to Add to Cart and Purchase stages.
+
+---
+
+### 10. `UNION ALL` for Funnel Output
+
+Combined the three funnel stages into a single result set for visualization and comparison.
+
+```sql id="r5t1v7"
+SELECT 'Product View' AS stage, ...
 UNION ALL
-
-SELECT
-    'Add to Cart',
-    COUNTIF(cart_flag = 1)
-FROM aggregation
-
+SELECT 'Add to Cart', ...
 UNION ALL
-
-SELECT
-    'Purchase',
-    COUNTIF(purchase_flag = 1)
-FROM aggregation
+SELECT 'Purchase', ...
 ```
 
-This produces a simple funnel structure that can be visualized in a dashboard.
+---
 
-### Ratio Calculation
+### 11. Ratio & Percentage Calculation
 
-Purchase conversion rate was calculated by comparing purchases against product views.
+Calculated conversion rates by dividing purchasing customers by customers who viewed products or were exposed to each traffic source.
 
-```sql
+```sql id="p4x8d2"
 ROUND(
-    total_cust_purchase / total_cust_view * 100,
-    2
-) AS pct_cust_purchase_per_view
+  total_customer_purchase / total_customer * 100,
+  2
+) AS conversion_rate
 ```
 
-This metric enables comparison between browser and traffic-source combinations.
+The same calculation approach was used for browser × traffic source conversion analysis.
+
 
 ---
 
@@ -426,11 +404,11 @@ Marketing-and-Funnel-Analysis/
 │   ├── Preview Table events the_look ecommerce.jpeg
 │
 └── dashboard/
-│   └── dashboard.jpeg
+│   └── dashboard.png
 └── Output/
-    └── Output Query 1.jpeg
-    └── Output Query 2.jpeg
-    └── Output Query 3.jpeg
+    └── Output Query 1.png
+    └── Output Query 2.png
+    └── Output Query 3.png
 ```
 
 > The project uses the public TheLook Ecommerce dataset available through Google BigQuery. No private customer transaction data is included in this repository.
