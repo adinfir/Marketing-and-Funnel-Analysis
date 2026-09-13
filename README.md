@@ -200,9 +200,9 @@ The high volume was primarily driven by **Email and Adwords traffic**, making Ch
 
 The highest conversion rates were observed in several browser × traffic source combinations:
 
+* **IE + Facebook — 100%**
+* **Other + Organic — 100%**
 * **IE + Adwords — 99.91%**
-* **Firefox + Email — 99.89%**
-* **Safari + YouTube — 99.86%**
 
 While these segments show slightly higher conversion rates, the differences are very small.
 
